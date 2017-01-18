@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="Author" content="rmk">
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<style type="text/css">
+		ul>li{width: 200px;height: 20px;background-color: #f00;margin-top: 10px}
+	</style>
+	<script type="text/javascript" >
+		$(function () {
+			$("li").on("mouseenter", function(){
+				console.log( $(this).index());
+				$(this).css("background","#0f0");
+			});
+		});
+	</script>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>
